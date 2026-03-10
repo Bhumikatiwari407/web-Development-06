@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#shadowsample 
+{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 5px black;
+}
+
+#textsample
+{
+    box-shadow: 2px 2px 2px 1px rgb(234, 110, 135);
+}
+
+#button
+{
+    border: 1px solid rgb(37, 12, 12);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgb(232, 138, 138);
+}
+.a
+{
+    width: 200px;
+    height: 200px;
+}
+
+#mydiv, #mydiv2, #mydiv3
+{
+    border: 1px solid rgb(88, 121, 212);
+    background-color:  rgb(205, 227, 229);
+}
+
+#myspan, #myspan2, #myspan3
+{
+    width: 200px;
+    height: 200px;
+}
+
+.b
+{
+    border: 1px solid rgb(96, 32, 32);
+    background-color:  rgb(230, 165, 165);
+}
+#myspan2
+{
+    display: inline-block;
+}
