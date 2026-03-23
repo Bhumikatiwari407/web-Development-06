@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    padding: 10px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 10px;
+    z-index: 99;
+}
+
+#helpbutton{
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 100%;
+
+    .button{
+    background-color: transparent;
+    border: none;
+    }
+
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+#something{
+    border:1px solid #000;
+    background-color: aqua ;
+    width: 700px ;
+    height: 300px;
+    position: relative;
+
+
+#ricrimg{
+    width: inherit ;
+    height: inherit;
+    object-fit: cover;
+}
+#visitButton{
+    position: absolute;
+}
+}

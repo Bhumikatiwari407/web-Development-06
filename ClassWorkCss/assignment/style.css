@@ -1,0 +1,103 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#4a6bdc,#4a6bdc);
+}
+
+/* MAIN CONTAINER */
+.container{
+    display:flex;
+    gap:40px;
+}
+
+/* CARD STYLE */
+.card{
+    background:#f1f1f1;
+    padding:30px;
+    width:320px;
+    border-radius:6px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+.card h2{
+    margin-bottom:20px;
+    color:#333;
+    border-bottom:3px solid #4a6bdc;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* INPUTS */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-bottom:1px solid #ccc;
+    background:transparent;
+    outline:none;
+}
+
+/* OPTIONS ROW */
+.options{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    margin:10px 0;
+}
+
+.options a{
+    text-decoration:none;
+    color:#4a6bdc;
+}
+
+/* TERMS */
+.terms{
+    font-size:13px;
+    display:block;
+    margin:10px 0;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:4px;
+    background:#4a6bdc;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#3956b8;
+}
+
+/* BOTTOM TEXT */
+.bottom-text{
+    text-align:center;
+    font-size:13px;
+    margin-top:15px;
+}
+
+.bottom-text a{
+    color:#4a6bdc;
+    text-decoration:none;
+    font-weight:bold;
+}

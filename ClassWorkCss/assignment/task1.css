@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 80vh;
+    padding: 20vh;
+    align-items: end;
+}
+
+.card{
+    background-color: white;
+    max-height: ;
+    padding: ;
+    border-radius: ;
+
+}
+.form-field{
+    display: ;
+    border-bottom: 1px solid gray;
+}
+.form-field input{
+    background-color: ;
+
+}
+
+.reference{
+    text-align: center;
+}
+.submitButton button:hover{
+    background-color: aliceblue;
+    color: skyblue;
+}
+.submitButton button:active{
+    background-color: aliceblue;
+    color: skyblue;
+    border: 1px solid skyblue;
+    font-weight: bolder;
+}
+
+.form-field input:focus{
+    border: 1px solid skyblue;
+    border-radius: ;
+}
+
