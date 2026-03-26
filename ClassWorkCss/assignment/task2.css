@@ -5,9 +5,7 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-    background: #cfd6dd;
-}
+
 
 .container {
     width: 1000px;
@@ -17,7 +15,7 @@ body {
 
 /* LEFT SIDE */
 .left {
-    width: 32%;
+    width: 25%;
     background: #2f3e4e;
     color: #fff;
     padding: 25px;
@@ -29,8 +27,8 @@ body {
 }
 
 .profile img {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 4px solid #fff;
 }
@@ -75,8 +73,8 @@ body {
 
 /* RIGHT SIDE */
 .right {
-    width: 68%;
-    background: #eef2f6;
+    width: 75%;
+    background: #dbdfe2;
     padding: 30px;
 }
 
