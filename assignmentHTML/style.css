@@ -1,9 +1,13 @@
-/* CLASSIC RETRO ACADEMIC THEME */
+:root{
+    --primary-color: #efc6d5;
+    --secondary-color: #f771a2;
+    --text-color: #3d2525;
+}
 
 body{
-    background-color:#f4efe6;
+    background-color:var(--primary-color);
     font-family: Georgia, "Times New Roman", serif;
-    color:#3d2525;
+    color:var(--text-color);
     margin:0;
     padding:40px;
 }
@@ -17,9 +21,10 @@ table{
 
     border-collapse:collapse;
 
-    background-color:#604395;
+    background-color:var(--primary-color);
 
     border:3px solid #600d26;
+    border-radius: 15px;
 
 }
 
@@ -27,7 +32,7 @@ table{
 /* HEADER */
 
 th{
-    background-color:#d9c6a5;
+    background-color:var(--primary-color);
 
     color:#432d0b;
 
@@ -102,7 +107,7 @@ a:hover{
 
 footer{
     margin-top:50px;
-
+    
     background-color:#e8dcc8;
 
     padding:25px;
@@ -135,4 +140,10 @@ footer h3{
 
 hr{
     border:1px solid #8b6f47;
+}
+#discription{
+    text-align: center;
+}
+#details{
+    text-align: center;
 }

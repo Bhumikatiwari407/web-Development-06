@@ -1,0 +1,31 @@
+:root{
+    --primary-color: orange;
+    --secondary-color: skyblue;
+    --text-color: green;
+}
+h1{
+    color: orange;
+}
+h3{
+    color: blue;
+}
+p{
+    color: green;
+}
+th{
+    color: orange;
+}
+td{
+    color: green;
+}
+button{
+    border:1px solid black ;
+    border-radius: 1px;
+    padding: 8px 15px;
+}
+#login{
+    background-color: orangered ;
+}
+#register{
+    background-color: blue;
+}

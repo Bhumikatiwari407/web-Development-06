@@ -1,0 +1,33 @@
+#div1{
+    border: 1px solid black;
+    width: 10px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+}
+
+#div1:hover{
+    width: 250px;
+    transition: width 3s linear 1s;
+}
+#div2{
+    border: 1px solid black;
+    width: 250px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+}
+
+#card{
+    margin: auto;
+    width:200px ;
+    height:300px ;
+    border: 1px solid black;
+    transform: rotatex(0deg) ;
+    transition: transform 1s linear;
+}
+
+#card:hover{
+    transform: rotatex(180deg) ;
+    transition: transform 3s linear;
+}
