@@ -1,31 +1,51 @@
 :root{
-    --primary-color: orange;
-    --secondary-color: skyblue;
+    --primary-color: rgb(231, 34, 67);
+    --secondary-color: orange;
+    --bg-color: rgb(244, 222, 222);
     --text-color: green;
 }
 h1{
-    color: orange;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+h2{
+    color: var(--primary-color);
+    background-color: var(--bg-color);
 }
 h3{
-    color: blue;
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
 }
 p{
-    color: green;
+    color: var(--text-color);
 }
 th{
-    color: orange;
+    color: var(--primary-color);
 }
 td{
-    color: green;
+    color: var(--text-color);
 }
 button{
     border:1px solid black ;
-    border-radius: 1px;
+    border-radius: 3px;
     padding: 8px 15px;
+    box-shadow: 5px 5px gray;
+    width: 120px;
+    font-size: large;
+    margin: 20px 30px;
+    
+}
+button:hover{
+    box-shadow: 5px 5px rgb(252, 112, 112);
+    width: 120px;
+    font-size: large;
+    margin: 20px 30px;
+    text-decoration:underline;
+    color: white;
 }
 #login{
-    background-color: orangered ;
+    background-color: var(--primary-color);
 }
 #register{
-    background-color: blue;
+    background-color: var(--secondary-color);
 }
