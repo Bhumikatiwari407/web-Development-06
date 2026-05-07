@@ -9,45 +9,45 @@
 //     console.log(element);
 // });
 
-let fData=[
-    {
-        name:"RajVerdhan",
-        dob:"05-03-1995",
-        phone:"98764553674",
-        city:"Bhopal",
-        profession:"teacher"
-    },
-{
-        name:"RajVerdhan",
-        dob:"05-03-1995",
-        phone:"98764553674",
-        city:"Bhopal",
-        profession:"teacher"
-    },
-{
-        name:"RajVerdhan",
-        dob:"05-03-1995",
-        phone:"98764553674",
-        city:"Bhopal",
-        profession:"teacher"
-    },
-{
-        name:"RajVerdhan",
-        dob:"05-03-1995",
-        phone:"98764553674",
-        city:"Bhopal",
-        profession:"teacher"
-    },
-];
-fData.forEach((item)=>{
-    console.log(item["name"]);
-});
+// let fData=[
+//     {
+//         name:"RajVerdhan",
+//         dob:"05-03-1995",
+//         phone:"98764553674",
+//         city:"Bhopal",
+//         profession:"teacher"
+//     },
+// {
+//         name:"RajVerdhan",
+//         dob:"05-03-1995",
+//         phone:"98764553674",
+//         city:"Bhopal",
+//         profession:"teacher"
+//     },
+// {
+//         name:"RajVerdhan",
+//         dob:"05-03-1995",
+//         phone:"98764553674",
+//         city:"Bhopal",
+//         profession:"teacher"
+//     },
+// {
+//         name:"RajVerdhan",
+//         dob:"05-03-1995",
+//         phone:"98764553674",
+//         city:"Bhopal",
+//         profession:"teacher"
+//     },
+// ];
+// fData.forEach((item)=>{
+//     console.log(item["name"]);
+// });
 
 
-fData.map((element,idx)=>{
-    console.log(idx);
-    console.log(element,"phone");
-});
+// fData.map((element,idx)=>{
+//     console.log(idx);
+//     console.log(element,"phone");
+// });
 // console.log(fData);
 // console.log(fData[1]["name"]);      //bracket notation(work for both array and json)
 // console.log(fData[1].phone);       //dot notation(work only in json)
@@ -84,5 +84,23 @@ let ab="this is webdevelopment class"
 console.log(ab);
 console.log(ab.split(" "));
 console.log(ab.split("-"));
+
+let srt="this is a string"
+console.log(srt.charAt(5));
+console.log(srt.toUpperCase());
+console.log(srt.toLowerCase());
+
+let a=3.14;
+console.log(a);
+console.log(typeof a);
+let b= a.toString();
+console.log(b);
+
+let c=3.1456789876434567887766;
+console.log(c);
+console.log(c.toFixed(3));
+
+
+
 
 
