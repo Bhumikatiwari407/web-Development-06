@@ -1,0 +1,10 @@
+#display{
+    background-color: aquamarine;
+    width: 170px;
+    height: 100px;
+}
+#Button{
+    width: 170px;
+    height: auto;
+    background-color: rgb(247, 204, 216);
+}
