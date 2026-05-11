@@ -1,10 +1,37 @@
-#display{
-    background-color: aquamarine;
-    width: 170px;
-    height: 100px;
+#calculatorBG {
+  height: 100vh;
+  background: url("./CalculatorBGImage.png");
 }
-#Button{
-    width: 170px;
-    height: auto;
-    background-color: rgb(247, 204, 216);
+
+#calculator {
+  width: 400px;
+  height: 600px;
+}
+
+#dispaly {
+  height: 25%;
+}
+
+#numPad {
+  height: 74%;
+}
+
+.numPadButtons {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+#equalButton {
+  width: 140px;
+  height: 70px;
+}
+
+button:active {
+  box-shadow: none !important;
+}
+
+
+label{
+    width: 100%;
 }
