@@ -17,6 +17,22 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="game-box">
+      <h2>Guess The Number</h2>
+      <p>Enter a number between 1 to 10</p>
+
+      <input
+        type="number"
+        id="guessInput"
+        min="1"
+        max="10"
+        placeholder="Enter your guess"
+      />
+
+      <button onclick="checkGuess()">Submit</button>
+
+      <div id="message"></div>
+    </div>
     
      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

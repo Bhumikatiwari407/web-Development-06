@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(184, 195, 208);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.main-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(242, 203, 203);
+}
+
+.heading {
+  background-color: #02113c;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 10px;
+}
+
+.btn {
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+#calculateBtn{
+    background-color: #02113c;
+}
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.result-card {
+  display: none;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+}
+
+.bill-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: bold;
+  color: #022917;
+}
+
+@media (max-width: 576px) {
+  .bill-line {
+    font-size: 15px;
+  }
+
+  .total {
+    font-size: 20px;
+  }
+}
