@@ -11,6 +11,12 @@ async function getdata(value) {
     }, 2000);
   });
 }
+//promise function
+// getdata(1).then(() => getdata(2));
+// getdata(1).then(() => getdata(3));
+// getdata(1).then(() => getdata(4));
+// getdata(1).then(() => getdata(5));
+// getdata(1).catch((rej) => console.log(rej));
 
 await getdata(1)
 await getdata(2)
