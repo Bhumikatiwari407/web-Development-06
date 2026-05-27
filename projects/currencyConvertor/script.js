@@ -1,25 +1,25 @@
 async function convertCurrency() {
 
-    let amount = document.getElementById("amount").value;
+    const amount = document.getElementById("amount").value;
 
-    let fromCurrency = document.getElementById("fromCurrency").value.toLowerCase();
+    const fromCurrency = document.getElementById("fromCurrency").value.toLowerCase();
 
-    let toCurrency = document.getElementById("toCurrency").value.toLowerCase();
+    const toCurrency = document.getElementById("toCurrency").value.toLowerCase();
 
     // API URL
-    let url = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrency}.json`;
+    const URL_API = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrency}.json`;
 
     try {
 
-        let response = await fetch(url);
+        const response = await fetch(URL_API);
 
-        let data = await response.json();
+        const data = await response.json();
 
-        // Get conversion rate
-        let rate = data[fromCurrency][toCurrency];
+        //conversion rate
+        const rate = data[fromCurrency][toCurrency];
 
         // Convert amount
-        let convertedAmount = amount * rate;
+        const convertedAmount = amount * rate;
 
         // Show result
         document.getElementById("result").innerHTML =
@@ -44,29 +44,73 @@ async function convertCurrency() {
 function updateFlags(fromCurrency, toCurrency) {
 
     // Currency to Country Code
-    let countryList = {
-        INR: "IN",
-        USD: "US",
-        EUR: "EU",
-        GBP: "GB",
-        JPY: "JP"
-    };
+    const countryList = {
+    AFN: "AF",
+    ALL: "AL",
+    DZD: "DZ",
+    ARS: "AR",
+    AUD: "AU",
+    EUR: "EU",
+    BDT: "BD",
+    BRL: "BR",
+    CAD: "CA",
+    CNY: "CN",
+    DKK: "DK",
+    EGP: "EG",
+    HKD: "HK",
+    HUF: "HU",
+    ISK: "IS",
+    INR: "IN",
+    IDR: "ID",
+    IRR: "IR",
+    IQD: "IQ",
+    ILS: "IL",
+    JPY: "JP",
+    KES: "KE",
+    KWD: "KW",
+    MYR: "MY",
+    MXN: "MX",
+    NPR: "NP",
+    NZD: "NZ",
+    NGN: "NG",
+    NOK: "NO",
+    PKR: "PK",
+    PHP: "PH",
+    PLN: "PL",
+    QAR: "QA",
+    RUB: "RU",
+    SAR: "SA",
+    SGD: "SG",
+    ZAR: "ZA",
+    KRW: "KR",
+    LKR: "LK",
+    SEK: "SE",
+    CHF: "CH",
+    THB: "TH",
+    TRY: "TR",
+    UAH: "UA",
+    AED: "AE",
+    GBP: "GB",
+    USD: "US",
+    VND: "VN",
+    ZWL: "ZW"
+};
 
     // From Flag
-    let fromCountryCode = countryList[fromCurrency.toUpperCase()];
+    const fromCountryCode = countryList[fromCurrency.toUpperCase()];
 
     document.getElementById("fromFlag").src =
         `https://flagsapi.com/${fromCountryCode}/flat/64.png`;
 
     // To Flag
-    let toCountryCode = countryList[toCurrency.toUpperCase()];
+    const toCountryCode = countryList[toCurrency.toUpperCase()];
 
     document.getElementById("toFlag").src =
         `https://flagsapi.com/${toCountryCode}/flat/64.png`;
 }
 
 
-// Change flags automatically when dropdown changes
+// Change flags 
 document.getElementById("fromCurrency").addEventListener("change", () => {
 
     updateFlags(
@@ -87,6 +131,6 @@ document.getElementById("toCurrency").addEventListener("change", () => {
 });
 
 
-// Default flags on page load
+// Default flags
 updateFlags("inr", "usd");
 
