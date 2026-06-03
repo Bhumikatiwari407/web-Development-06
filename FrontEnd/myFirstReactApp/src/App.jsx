@@ -7,14 +7,16 @@ import Product from "./pages/Product";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FaWifi } from "react-icons/fa";
 
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Header/>
 
+    <BrowserRouter>
+
+      <Header/>
 
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -24,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
       </Routes>
+
     </BrowserRouter>
 
     </>
