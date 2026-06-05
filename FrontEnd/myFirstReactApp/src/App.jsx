@@ -8,15 +8,18 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FaWifi } from "react-icons/fa";
+import contactImage from "./assets/contactPage.jpg"
 
 
 function App() {
   return (
     <>
+    
 
     <BrowserRouter>
 
       <Header/>
+      <img src={contactImage} alt="" className="w-100" />
 
       <Routes>
         <Route path="/" element={<Home/>}/>
