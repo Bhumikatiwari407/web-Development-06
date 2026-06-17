@@ -36,7 +36,7 @@ const ContactUs = () => {
           <img src={deliveryboy} alt="" className="rotate-y-180" />
         </div>
         <div className="w-md bg-(--background) rounded shadow p-10 flex flex-col justify-center">
-          <div>Welocome Back!</div>
+          <div>CONTACT US !!!</div>
 
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-2">
