@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #001BB7;
+  --primary: #c2410c;
   --primary-text:#dfdff8;
   --secondary: #0046FF;
   --accent: #FF8040;
@@ -10,4 +10,8 @@
   --warning: #F59E0B;
   --background: #F5F1DC;
   --text: #111827;
+}
+
+button{
+  cursor: pointer;
 }
