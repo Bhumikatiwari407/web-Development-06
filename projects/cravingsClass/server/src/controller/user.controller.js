@@ -27,13 +27,15 @@ export const EditUserProfile = async (req, res, next) => {
       // console.log(dataURI.slice(0, 100));
 
       const result = await cloudinary.uploader.upload(dataURI, {
-        folder: "cravingsClass/profile",
+        folder: "Cravings678/profile",
         width: 500,
         height: 500,
         crop: "fill",
       });
 
       console.log(result);
+      existingUser.photo.url = result.secure_url;
+      existingUser.photo.publicId = result.public_id;
     }
 
     existingUser.fullName = fullName;
