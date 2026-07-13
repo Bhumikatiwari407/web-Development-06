@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import api from "../config/api.config.js";
 import { useAuth } from "../context/AuthContext";
+import ForgotPasswordModal from "../components/commonModals/ForgotPasswordModal";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -166,12 +167,12 @@ const Login = () => {
                 />
                 <span className="text-sm">Remember me</span>
               </label>
-              <button
+              <div
                 onClick={() => setIsForgotPasswordModalOpen(true)}
                 className="text-sm text-(--color-primary) hover:underline transition-colors"
               >
                 Forgot Password?
-              </button>
+              </div>
             </div>
 
             {/* Login Button */}
