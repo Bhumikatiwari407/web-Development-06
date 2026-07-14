@@ -74,7 +74,7 @@ const Login = () => {
     } catch (error) {
       toast.error(
         error.response?.data?.message ||
-          "Unknown error occurred during registration. Please try again.",
+          "Unknown error occurred during Login. Please try again.",
       );
     } finally {
       setLoading(false);
@@ -93,7 +93,8 @@ const Login = () => {
           </p>
 
           {/* Login Form */}
-          <form onSubmit={handleSubmit}>
+          <form onSub
+          mit={handleSubmit}>
             {/* Email */}
             <div className="mb-4">
               <label className="block text-(--color-neutral) font-semibold mb-2">
