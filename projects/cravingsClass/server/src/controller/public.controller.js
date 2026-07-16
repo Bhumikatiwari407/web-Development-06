@@ -1,4 +1,20 @@
 import Contact from "../models/contact.model.js";
+import Restaurant from "../models/restaurant.model.js"; // adjust path if your folder is models/
+
+export const GetAllRestaurants = async (req, res, next) => {
+  try {
+    const restaurants = await Restaurant.find({
+      status: "active",
+    });
+
+    res.status(200).json({
+      success: true,
+      data: restaurants,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
 export const ContactUsForm = async (req, res, next) => {
   try {

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import React from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -94,8 +93,7 @@ const Login = () => {
           </p>
 
           {/* Login Form */}
-          <form onSub
-          mit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             {/* Email */}
             <div className="mb-4">
               <label className="block text-(--color-neutral) font-semibold mb-2">
