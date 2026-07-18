@@ -38,6 +38,7 @@ export const RestaurantGetData = async (req, res, next) => {
     console.log(error.message);
     next();
   }
+  
 };
 
 export const RestaurantUpdateProfile = async (req, res, next) => {
