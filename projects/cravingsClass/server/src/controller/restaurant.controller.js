@@ -15,6 +15,7 @@ export const RestaurantGetData = async (req, res, next) => {
     console.log("Manager ID:", managerId);
 
 
+    
     if (currentUser._id.toString() !== managerId) {
       const error = new Error("Unauthorized Access");
       error.statusCode = 401;
