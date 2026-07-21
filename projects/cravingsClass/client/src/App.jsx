@@ -11,6 +11,7 @@ import Contact from "./pages/ContactUs";
 import RestaurantDashboard from "./pages/dashboard/RestaurantDashboard";
 import RiderDashboard from "./pages/dashboard/RiderDashboard";
 import AdminDashboard from "./pages/dashboard/AdminDashboard";
+import Test from "./pages/Test";
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/restaurant-dashboard" element={<RestaurantDashboard />} />
         <Route path="/rider-dashboard" element={<RiderDashboard />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
       <Footer />
     </>
