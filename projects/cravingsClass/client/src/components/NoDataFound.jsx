@@ -11,7 +11,7 @@ const NoDataFound = ({ height, width, text }) => {
         <div className="w-30 h-30 flex justify-center items-center">
           <img
             src={NoDataFoundGif}
-            alt="No Data Found"
+            alt="NO DATA FOUND"
             className="w-full h-full object-cover"
           />
         </div>
