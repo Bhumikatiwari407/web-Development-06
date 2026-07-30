@@ -5,6 +5,8 @@ const NoDataFound = ({ height, width, text }) => {
   return (
     <>
       <div
+
+      
         className="flex flex-col justify-center items-center"
         style={{ height: height || "100%", width: width || "100%" }}
       >
