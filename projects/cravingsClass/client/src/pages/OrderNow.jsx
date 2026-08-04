@@ -211,7 +211,10 @@ const OrderNow = () => {
                 }
                 className="bg-(--color-base-100) rounded-2xl overflow-hidden border border-(--color-base-300) shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer group"
               >
-                {/* Cover Image */}
+
+
+                
+                {/* Cover Images */}
                 <div className="relative w-full h-48 overflow-hidden bg-(--color-base-300)">
                   <img
                     src={restaurant?.coverImage?.url || defaultRestaurantImage}
@@ -220,7 +223,7 @@ const OrderNow = () => {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent" />
 
-                  {/* Open / Closed */}
+                  {/* Open or Closed */}
                   <span
                     className={`absolute top-3 left-3 text-[11px] font-bold px-2.5 py-0.5 rounded-full ${
                       restaurant.isOpen
