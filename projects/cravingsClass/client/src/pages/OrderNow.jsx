@@ -211,9 +211,6 @@ const OrderNow = () => {
                 }
                 className="bg-(--color-base-100) rounded-2xl overflow-hidden border border-(--color-base-300) shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer group"
               >
-
-
-                
                 {/* Cover Images */}
                 <div className="relative w-full h-48 overflow-hidden bg-(--color-base-300)">
                   <img
